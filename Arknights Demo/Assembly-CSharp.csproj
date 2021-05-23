@@ -58,6 +58,8 @@
   <ItemGroup>
     <Compile Include="Assets\脚本\叶庭辉\changeSecretary.cs" />
     <Compile Include="Assets\now.cs" />
+    <Compile Include="Assets\脚本\叶庭辉\跳转干员界面.cs" />
+    <Compile Include="Assets\脚本\叶庭辉\返回主界面.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
