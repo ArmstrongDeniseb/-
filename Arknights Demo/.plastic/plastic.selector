@@ -1,0 +1,4 @@
+repository "Arknights Demo@ssl://armstrongdeniseb@sh03-plasticscm.unity.cn:8787"
+  path "/"
+    smartbranch "/main/armstrongdeniseb12" 
+     
