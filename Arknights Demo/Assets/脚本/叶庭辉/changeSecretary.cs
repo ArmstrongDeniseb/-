@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class changeSecretary : MonoBehaviour
 {
+    bool b = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +19,29 @@ public class changeSecretary : MonoBehaviour
 
     private void OnMouseDown()
     {
-        //简易的看板娘切换功能（只能切过去，不能切回来）
-        Debug.Log("还在开发中！");
-        SpriteRenderer srSecretary = GameObject.Find("secretary").GetComponent<SpriteRenderer>();
-        Texture2D texture2d = (Texture2D)Resources.Load("立绘_阿米娅_skin1");
-        Sprite sp = Sprite.Create(texture2d, srSecretary.sprite.textureRect, new Vector2(0.5f, 0.5f));
-        srSecretary.sprite = sp;
+        Debug.Log("看板娘切换v1.0水的一批版（作者：憨包小叶）");
+        if (b) 
+        {
+            for (int i = 0; i < 15; i++)
+            {
+                SpriteRenderer srSecretary = GameObject.Find("secretary").GetComponent<SpriteRenderer>();
+                Texture2D texture2d = (Texture2D)Resources.Load("立绘_阿米娅_skin1");
+                Sprite sp = Sprite.Create(texture2d, srSecretary.sprite.textureRect, new Vector2(0.5f, 0.5f));
+                srSecretary.sprite = sp;
+            }
+            b = false;
+        }
+        else
+        {
+            for (int i = 0; i < 15; i++)
+            {
+                SpriteRenderer srSecretary = GameObject.Find("secretary").GetComponent<SpriteRenderer>();
+                Texture2D texture2d = (Texture2D)Resources.Load("立绘_阿米娅_1");
+                Sprite sp = Sprite.Create(texture2d, srSecretary.sprite.textureRect, new Vector2(0.5f, 0.5f));
+                srSecretary.sprite = sp;
+            }
+            b = true;
+        }
+        
     }
 }

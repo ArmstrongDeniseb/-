@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\脚本\叶庭辉\changeSecretary.cs" />
+    <Compile Include="Assets\now.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
